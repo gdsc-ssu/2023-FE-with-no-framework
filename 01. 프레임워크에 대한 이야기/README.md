@@ -88,7 +88,9 @@ export const formatDate = date => {
 ### ▶️ 의존성 주입
 - 요소가 앵귤러 애플리케이션에서 통신하도록 하기 위해 **의존성 주입 메커니즘**을 사용해 요소를 주입해야 함
 - 이전 AngularJS : **서비스 로케이터 패턴**을 기반으로 하는 의존성 주입 메커니즘 존재
+[Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#UsingAServiceLocator)
 
+[번역본](https://javacan.tistory.com/entry/120)
 - 1-4) AngularJS의 의존성 주입
 ```js
 // 1-4
