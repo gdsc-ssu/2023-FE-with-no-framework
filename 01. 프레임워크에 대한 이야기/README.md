@@ -87,7 +87,7 @@ export const formatDate = date => {
 
 ### ▶️ 의존성 주입
 - 요소가 앵귤러 애플리케이션에서 통신하도록 하기 위해 **의존성 주입 메커니즘**을 사용해 요소를 주입해야 함
-- 이전 AngularJS : **서비스 로케이터 패턴**을 기반으로 하는 의존성 주입 메커니즘 존재
+- 이전 AngularJS : **서비스 로케이터 패턴**을 기반으로 하는 의존성 주입 메커니즘 존재      
 [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#UsingAServiceLocator)
 
 [번역본](https://javacan.tistory.com/entry/120)
@@ -179,16 +179,16 @@ class PosedExample extends Component {
         })
     }
 
-render () {
-    const { isVisible } = this.state
-    const pose = isVisible ? 'visible' : 'hidden'
-    return ( 
-        <div>
-            <Box className= 'box' pose={pose} />
-            <button onClick={this.toggle}>Toggle‹/button>
-        </div> 
-        )
-    }
+    render() {
+        const { isVisible } = this.state
+        const pose = isVisible ? 'visible' : 'hidden'
+        return ( 
+            <div>
+                <Box className= 'box' pose={pose} />
+                <button onClick={this.toggle}>Toggle‹/button>
+            </div> 
+            )
+        }
 }
 
 export default PosedExample;
@@ -249,7 +249,12 @@ class PosedExample extends Component {
 }
 ```
 명령형 패턴으로 사각형을 움직이는 코드    
+
 → 저자가 리액트가 라이브러리가 아닌 프레임워크라고 믿는 이유    
+&nbsp;&nbsp;&nbsp; : **명령형 패턴** - 어떻게(How)을 중요시 여김    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; → 제어의 흐름과 같은 방법을 제시하고 목표를 명시하지 않는 형태  
+&nbsp;&nbsp;&nbsp; : **선언형 패턴** - 무엇(What)을 중요시 여김    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; → 제어의 흐름보다 원하는 목적을 중요시 여기는 형태     
 > 팁 : 작업을 처리할 때 **프레임워크 방식**을 사용하고 있다면 프레임워크라고 볼 수 있다.
 
 ## ✅ 자바스크립트 프레임워크 연혁
