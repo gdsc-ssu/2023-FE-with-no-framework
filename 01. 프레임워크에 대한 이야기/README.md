@@ -14,9 +14,8 @@
 - 코드 : 라이브러리 호출
 <img width="487" alt="스크린샷 2023-01-02 오후 11 30 05" src="https://user-images.githubusercontent.com/66112716/210245056-8a341337-9b42-4aec-8e02-bbfd99204a77.png">
 
-- 1-1) 앵귤러 Service 예제
 ```js
-// 1-1
+// 1-1) 앵귤러 Service 예제
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -33,9 +32,8 @@ export class PeopleService {
 }
 ```
 
-- 1-2) 앵귤러 Component 예제
 ```js
-// 1-2
+// 1-2) 앵귤러 Component 예제
 import { Component, OnInit } from '@angular/core';
 import { PeopleService } from '../people.service';
 
@@ -58,9 +56,8 @@ export class PeopleListComponent implements OnInit {
 }
 ```
 
-- 1-3) Moment.js 예제
 ```js
-// 1-3
+// 1-3) Moment.js 예제
 import moment from 'moment';
 
 const DATE_FORMAT = 'DD/MM/YYYY';
@@ -91,9 +88,8 @@ export const formatDate = date => {
     - [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#UsingAServiceLocator)    
     - [번역본](https://javacan.tistory.com/entry/120)     
 
-- 1-4) AngularJS의 의존성 주입
 ```js
-// 1-4
+// 1-4) AngularJS의 의존성 주입
 const peopleListComponent = peopleService => {
     // 실제 코드
 };
@@ -111,9 +107,8 @@ angular.component('people-list', [
     - `RxJS` 사용 시 옵저버블 → 프라미스, 프라미스 → 옵저버블로 쉽게 변환 가능
 - 앵귤러 프로젝트에서 프라미스 기반 라이브러리를 통합해야 하는 경우 추가 작업 요구
 
-- 1-5) 옵저버블을 사용하지 않은 앵귤러 서비스
 ```js
-// 1-5
+// 1-5) 옵저버블을 사용하지 않은 앵귤러 서비스
 import axios from 'axios';
 const URL = 'http://example.api.com/';
 
@@ -124,9 +119,8 @@ export default {
 }
 ```
 
-- 1-6) 옵저버블을 사용하지 않는 앵귤러 구성 요소
 ```js
-// 1-6
+// 1-6) 옵저버블을 사용하지 않는 앵귤러 구성 요소
 import people from 'people.js';
 
 export class PeopleList {
@@ -149,9 +143,8 @@ export class PeopleList {
     → 위 방법 : 대부분의 리액트 생태계 라이브러리에서 통용    
     - [명령형 VS 선언형 프로그래밍](https://iborymagic.tistory.com/73)    
 
-- 1-7) 리액트 Pose 애니메이션 예제
 ```js
-// 1-7
+// 1-7) 리액트 Pose 애니메이션 예제
 import React, { Component } from 'react';
 import posed from 'react-pose';
 
@@ -196,9 +189,8 @@ export default PosedExample;
 ```
 리액트에서 사용하는 **선언적 패턴**    
 
-- 1-8) 웹 애니메이션 API를 사용한 리액트 애니메이션
 ```js
-// 1-8
+// 1-8) 웹 애니메이션 API를 사용한 리액트 애니메이션
 import React, { Component } from 'react';
 const animationTiming = { 
     duration: 500,
@@ -271,9 +263,8 @@ class PosedExample extends Component {
 - **양방향 데이터 바인딩**
     - ex) AngularJS의 지시문(디렉티브)인 `ng-model` 사용
 
-- 1-9) 앵귤러JS의 양방향 데이터 바인딩
 ```js
-// 1-9
+// 1-9) 앵귤러JS의 양방향 데이터 바인딩
 <div ng-app="app" ng-controller="ctrl">
     Value: <input ng-model="value">
     <h1>You entered: {{value}}</h1>
@@ -300,9 +291,8 @@ class PosedExample extends Component {
 ![image](https://user-images.githubusercontent.com/66112716/210302613-ab8248ff-e8cf-4384-a43e-60f87e3960b0.png)
 
 ### ▶️ 리액트
-- 1-10) 라이프사이클 메서드를 갖고 있는 기본 리액트 구성 요소
 ```js
-// 1-10
+// 1-10) 라이프사이클 메서드를 갖고 있는 기본 리액트 구성 요소
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
