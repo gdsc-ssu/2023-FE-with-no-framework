@@ -147,7 +147,7 @@ export class PeopleList {
     - DOM을 직접 조작하는 대신 **구성 요소의 상태를 수정**    
         → 리액트가 대신 DOM을 수정해줌    
     → 위 방법 : 대부분의 리액트 생태계 라이브러리에서 통용    
-
+[명령형 VS 선언형 프로그래밍](https://iborymagic.tistory.com/73)
 - 1-7) 리액트 Pose 애니메이션 예제
 ```js
 // 1-7
