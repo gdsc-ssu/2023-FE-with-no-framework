@@ -88,9 +88,9 @@ export const formatDate = date => {
 ### ▶️ 의존성 주입
 - 요소가 앵귤러 애플리케이션에서 통신하도록 하기 위해 **의존성 주입 메커니즘**을 사용해 요소를 주입해야 함
 - 이전 AngularJS : **서비스 로케이터 패턴**을 기반으로 하는 의존성 주입 메커니즘 존재      
-[Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#UsingAServiceLocator)
+    - [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#UsingAServiceLocator)    
+    - [번역본](https://javacan.tistory.com/entry/120)     
 
-[번역본](https://javacan.tistory.com/entry/120)
 - 1-4) AngularJS의 의존성 주입
 ```js
 // 1-4
@@ -105,7 +105,7 @@ angular.component('people-list', [
 ```
 
 ### ▶️ 옵저버블
-- 앵귤러 : 옵저버블을 사용한 반응형 프로그래밍용 라이브러리 `[RxJS](https://velog.io/@teo/rxjs)`를 기반으로 설계됨
+- 앵귤러 : 옵저버블을 사용한 반응형 프로그래밍용 라이브러리 [RxJS](https://velog.io/@teo/rxjs)를 기반으로 설계됨
     - HTTP 요청이 Promise처럼 설계되는 다른 FE 프레임워크들과 다름
         - Promise : 비동기 작업의 최종 완료 및 실패를 나타내는 표준 방법
     - `RxJS` 사용 시 옵저버블 → 프라미스, 프라미스 → 옵저버블로 쉽게 변환 가능
@@ -147,7 +147,8 @@ export class PeopleList {
     - DOM을 직접 조작하는 대신 **구성 요소의 상태를 수정**    
         → 리액트가 대신 DOM을 수정해줌    
     → 위 방법 : 대부분의 리액트 생태계 라이브러리에서 통용    
-[명령형 VS 선언형 프로그래밍](https://iborymagic.tistory.com/73)
+    - [명령형 VS 선언형 프로그래밍](https://iborymagic.tistory.com/73)    
+
 - 1-7) 리액트 Pose 애니메이션 예제
 ```js
 // 1-7
@@ -185,7 +186,7 @@ class PosedExample extends Component {
         return ( 
             <div>
                 <Box className= 'box' pose={pose} />
-                <button onClick={this.toggle}>Toggle‹/button>
+                <button onClick={this.toggle}>Toggle</button>
             </div> 
             )
         }
@@ -289,8 +290,8 @@ class PosedExample extends Component {
     ]);
 </script>
 ```
-- `$scope`의 모든 변경 사항은 DOM에 자동으로 적용됨
-- 입력 이벤트는 `$scope` 객체에 새로운 값을 생성함
+`$scope`의 모든 변경 사항은 DOM에 자동으로 적용됨      
+입력 이벤트는 `$scope` 객체에 새로운 값을 생성함     
 
 - 양방향 데이터 바인딩 스키마
     - 대규모 애플리케이션에 적합하지 않아 많은 개발자들이 AngularJS를 떠나게 됨
@@ -347,7 +348,7 @@ render (<Timer></Timer>, mountNode)
 - 엔터프라이즈 세계를 타깃으로 해 출시
 - AngularJS (Angular1)은 SPA 개발에 사용되었으나, 대규모 애플리케이션용으로 설계된 것이 아님
     - TypeScript를 표준으로 Angular 릴리즈
-        - 자바, C# 개발자가 프론트엔드 애플리케이션 개발에 쉽게 접근할 수 있게 됨
+        - Java, C# 개발자가 프론트엔드 애플리케이션 개발에 쉽게 접근할 수 있게 됨
 
 ### ▶️ 기술 부채
 > 프로젝트에 기능을 추가할 때에는 여러 옵션이 존재한다.    
