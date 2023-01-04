@@ -61,7 +61,7 @@ export class PeopleListComponent implements OnInit {
 - 1-3) Moment.js 예제
 ```js
 // 1-3
-import moment 'moment';
+import moment from 'moment';
 
 const DATE_FORMAT = 'DD/MM/YYYY';
 
