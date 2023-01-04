@@ -289,6 +289,7 @@ class PosedExample extends Component {
 
 - 양방향 데이터 바인딩 스키마
     - 대규모 애플리케이션에 적합하지 않아 많은 개발자들이 AngularJS를 떠나게 됨
+    - [양방향 바인딩 VS 단방향 바인딩 - 장단점](https://velog.io/@sunaaank/data-binding)
 
 ![image](https://user-images.githubusercontent.com/66112716/210302613-ab8248ff-e8cf-4384-a43e-60f87e3960b0.png)
 
