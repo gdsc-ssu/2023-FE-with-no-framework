@@ -63,6 +63,8 @@ button.addEventListener(
 
 ### DOM 이벤트 라이프 사이클
 
+<i>[EventTarget.addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#syntax)</i>
+
 ```js
 // addEventListener의 세 번째 매개변수는 useCapture로 기본값은 false.
 // true면 캡쳐링 단계에서, false면 버블링 단계에서 이벤트 캐치
