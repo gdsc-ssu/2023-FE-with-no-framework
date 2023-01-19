@@ -339,7 +339,10 @@ if (isNodeChanged(virtualNode, realNode)) {
     realNode.replaceWith(virtualNode)
 }
 ```
-
+4. 모든 하위 노드에 대해서 동일한 diff 알고리즘 적용
+- 1. **"실제 노드의 자식 노드들"**과 **"가상 노드의 자식 노드들"** 을 비교함
+- 2. 각각의 자식 노드들의 자식 노드들도 **재귀적**으로 호출함
+       * 그러다 보면, 실제돔은 있는데 가상돔이 없는 경우(1번), 실제돔은 없는데 가상돔만 있는 경우(2번) 상황이 발생함
 - [2-19) applyDiff 함수, 2-20) isNodeChanged 함수](https://github.com/Apress/frameworkless-front-end-development/blob/master/Chapter02/05/applyDiff.js)
 - diff 알고리즘 구현 : 노드를 다른 노드와 비교해 노드의 변경 여부 확인
     - 속성 수가 다르다.
