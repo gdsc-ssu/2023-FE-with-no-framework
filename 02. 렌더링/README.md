@@ -168,7 +168,7 @@ window.requestAnimationFrame(() => {
 - 모든 DOM 조작 및 애니메이션은 이 DOM API를 기반으로 해야 함
     - 메인 스레드 차단 X
     - 다음 다시 그리기(repaint)가 이벤트 루프에서 스케줄링 되기 직전에 실행됨
-
+- [requestAnimationFrame 이 왜 좋은가!!!](https://velog.io/@0715yk/HTML-requestAnimationFrame)
 - 정적 렌더링 스키마
 
 ![](https://user-images.githubusercontent.com/66112716/210338957-c408923e-9e46-41a9-8fbd-f52382f18007.png)
