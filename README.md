@@ -1,7 +1,8 @@
 # 2023 Frameworkless FrontEnd Development 📚
 2023 [프레임워크 없는 프론트엔드 개발](http://www.yes24.com/Product/Goods/96639825) 스터디를 위한 레포지토리입니다.    
 - 💡 본 스터디를 통해 리액트, 뷰 등의 웹 프레임워크(라이브러리)에 의존적인 학습 방법의 전환을 목표로 하고 있습니다.    
-- 💡 멤버 구성원 모두 [TODO on Any Framework](https://github.com/gdsc-ssu/todo-on-any-front-framework/blob/main/README.md) 스터디 병행을 통해 여러 FE 개발 프레임워크를 사용해보고, 각각의 장단점을 비교분석합니다.   
+- 💡 멤버 구성원 모두 [TODO on Any Framework](https://github.com/gdsc-ssu/todo-on-any-front-framework/blob/main/README.md) 스터디 병행을 통해 여러 프론트엔드 개발 프레임워크를 사용해보고,    
+  &nbsp;&nbsp; 각 프레임워크 별 장단점을 비교분석합니다.   
 - 💡 결과적으로, 프로젝트 시작 시 근거를 기반으로 프론트 기술 스택을 선택할 수 있는 능력을 함양하고자 합니다.   
 
 ## 📝 Contents
