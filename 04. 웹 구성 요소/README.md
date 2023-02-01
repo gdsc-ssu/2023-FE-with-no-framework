@@ -121,7 +121,7 @@ class MyElement extends HTMLElement {
 
 - 그리고 만약 다음과 같은 코드로 위 코드를 변경했다고 하면, <br />
   화면에 변화가 일어나지 않는다 <br />
-  `요소.color = "balck"` <br />
+  `요소.color = "black"` <br />
 
   > 변화가 없는 이유?
   >
