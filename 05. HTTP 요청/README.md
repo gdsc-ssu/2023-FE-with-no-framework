@@ -182,5 +182,5 @@ const request = async ({ method = "GET", url, headers = {}, body }) => {
 | 호환성    |                     | 😰 최신 브라우저에서만 동작                            |                                             |
 | 휴대성    | 브라우저에서만 동작 | 브라우저에서만 동작                                    | 😀Node.js나 RN 같은 다른 JS 환경에서도 동작 |
 | 발전성    |                     | 네트워크 관련 객체(Request, response)의 표준 정의 제공 |                                             |
-| 보안      |                     |                                                        | 😀XSR, XSRF에 대한 보호 시스템 내장         |
+| 보안      |                     |                                                        | 😀[CSRF(XSRF)](https://github.com/seohyun319/CS-interview-study/blob/main/09.%20Web/11_CSRF%20%26%20XSS.md)에 대한 보호 시스템 내장         |
 | 학습 곡선 | 😰콜백 작업…        |                                                        |                                             |
