@@ -92,7 +92,7 @@ return Object.keys(model)
 
 <img width="279" alt="스크린샷 2023-02-20 16 01 15" src="https://user-images.githubusercontent.com/67703882/220035348-22b9a681-9071-429d-aba2-403524493c45.png" style="zoom:80%;" >
 
-#### 네이티브 프록시
+### 2.2.1 네이티브 프록시
 
 자바스크립트는 [Proxy 객체](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)를 통해 프록시를 생성할 수 있는 방법을 제공한다. 이 API를 통해 객체의 디폴트 동작을 사용자 정의 코드로 쉽게 매핑할 수 있다.
 
@@ -151,13 +151,13 @@ const event = {
 
 이 책에서는 이벤트 버스 구현을 2가지 방식으로 구현한다. 첫번째 방식은 프레임워크 없이 작성하고, 두번째 방식은 Redux를 기반으로 한다.
 
-#### 프레임워크 없는 구현
+### 2.3.1 프레임워크 없는 구현
 
 `06. todo-eventbus-no-framework` 의 코드를 보면, 모델이 입력으로 이전 상태와 이벤트를 받아 새로운 상태를 반환하는 **순수 함수** 임을 알 수 있다. 순수 함수로 모델을 설계하면 새로운 상태가 모델 자체의 내부 상태가 되므로 테스트 가능성을 향상시키고, 상태가 업데이트되면 항상 새로운 객체가 되므로 이를 이용해 성능을 최적화할 수 있다.
 
-실제 애플리케이션에서는 코드 가독성을 위해 모델 함수를 작은 서브모델로 분할한다. `06-todo-eventbus-no-framework-sub-model` 를 보면 todo, filter를 각각 관리하는 2개의 서브 모델이 있고, 메인 model 함수가 서브모델의 결과를 하나의 state 객체로 병합하는 것을 알 수 있다.
+실제 애플리케이션에서는 코드 가독성을 위해 모델 함수를 작은 서브모델로 분할한다. `07. todo-eventbus-no-framework-sub-model` 를 보면 todo, filter를 각각 관리하는 2개의 서브 모델이 있고, 메인 model 함수가 서브모델의 결과를 하나의 state 객체로 병합하는 것을 알 수 있다.
 
-#### Redux
+### 2.3.2 Redux
 
 **Redux**는 Dan Abramov가 2015년에 처음 발표한 이후, 리액트 애플리케이션 제작의 주류 방식이 된 상태 관리 라이브러리이다. Redux를 사용하는 방식은 프레임워크 없이 구현한 이벤트 버스와 용어는 다를 뿐 방식은 매우 비슷하다.
 
@@ -203,6 +203,7 @@ Redux를 사용하게 되면 'Redux DevTools' 같이 편리한 도구와 플러�
 - 중앙 추상화를 기반으로 작업한다. 이로 인해 애플리케이션이 '누설'될 수 있다.
 
 > [**Leak Abstraction**의 법칙](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)
+>
 > 추상화는 고수준의 기능을 빠르고 편리하게 사용할 수 있도록 도와주지만, 잘못된 추상화의 구현으로 인해 이를 고치는 비용이 증가하는 것을 의미한다.
 
 ### 3.3 이벤트 버스
