@@ -14,7 +14,7 @@
 → 이러한 종류의 애플리케이션은 서버와의 상호작용을 위해 **AJAX**를 사용한다. 
 (하지만 모든 AJAX 애플리케이션이 SPA일 필요는 없다.)
 
-<img src="https://user-images.githubusercontent.com/70627979/217498414-13bf5432-e75f-4d9e-be9f-7610075d5a61.png" alt="image" style="zoom:25%;" />
+<img width="368" alt="image" src="https://user-images.githubusercontent.com/70627979/224552465-be86507c-3bd9-47ed-8d48-552c2621d7dc.png" style="zoom: 70%;" >
 
 <br>
 
@@ -87,7 +87,7 @@ router
     1. 현재 프래그먼트와 일치하는 경로를 찾는다.
     2. 경로가 발견되면 해당 구성 요소 함수가 메인 컨테이너에 있는 콘텐츠를 대체한다.
 
-<img src="https://user-images.githubusercontent.com/70627979/217498457-bd906562-7ff3-460a-9d42-3ce6e03f3759.png" alt="image" style="zoom: 30%;" />
+<img width="301" alt="image" src="https://user-images.githubusercontent.com/70627979/224552472-b8b514d9-6144-4c6e-8be6-1a248b1647f2.png" style="zoom:80%;" >
 
 <br>
 
