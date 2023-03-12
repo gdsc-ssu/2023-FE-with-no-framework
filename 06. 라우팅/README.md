@@ -38,14 +38,14 @@
 라우팅 시스템을 세 가지 버전으로 작성
 
 1. **프레그먼트 식별자(Fragment Identifiers)**를 기반으로 구현
-2. **히스토리 API(History API)**를 기반으로 구현
+2. **히스토리 API**(History API)를 기반으로 구현
 3. **Navigo 라이브러리**를 기반으로 구현
 
 <br>
 
 ### 2.1. 프래그먼트 식별자
 
-모든 URL은 [프래그먼트 식별자](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)라고 불리는 **해시(#)**로 시작하는 선택적 부분을 포함할 수 있다.
+모든 URL은 [프래그먼트 식별자](https://developer.mozilla.org/ko/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)라고 불리는 **해시**(#)로 시작하는 선택적 부분을 포함할 수 있다.
 
 - 프래그먼트 식별자의 목적은 **웹 페이지의 특정 섹션을 식별**하는 것이다.
 - 브라우저는 URL을 탐색할 때, 프래그먼트로 식별된 요소가 **뷰포트(viewport)의 맨 위에 오도록 페이지를 스크롤**한다.
