@@ -37,7 +37,7 @@
 
 라우팅 시스템을 세 가지 버전으로 작성
 
-1. **프레그먼트 식별자(Fragment Identifiers)**를 기반으로 구현
+1. **프레그먼트 식별자**(Fragment Identifiers)를 기반으로 구현
 2. **히스토리 API**(History API)를 기반으로 구현
 3. **Navigo 라이브러리**를 기반으로 구현
 
@@ -76,7 +76,7 @@ router
 
 - [createPages 구현](https://github.com/Apress/frameworkless-front-end-development/blob/master/Chapter06/00/pages.js)
   - URL이 변경될 때 메인 컨테이너 내부에 현재 구성 요소를 넣는다.
-- [**createRouter 구현**](https://github.com/Apress/frameworkless-front-end-development/blob/master/Chapter06/00/router.js)
+- [createRouter 구현](https://github.com/Apress/frameworkless-front-end-development/blob/master/Chapter06/00/router.js)
   - **라우터의 세 가지 공개 메서드**
     - `addRoute()` : 새 라우터와 프래그먼트로 구성된 구성 요소 정의
     - `setNotFound()` : 레지스트리에 없는 모든 프래그먼트에 대한 제네릭 구성 요소 설정
